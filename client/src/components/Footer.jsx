@@ -8,8 +8,7 @@ const Footer = () => {
 
             <div>
                 <img src={assets.logo} alt="logo"  className='w-32 sm:w-44'/>
-                {/* Fixed the class below from max-w-[410px] to max-w-102.5 */}
-                <p className='max-w-102.5 mt-6'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia labore, sunt explicabo eaque est officiis facilis culpa repellendus ex magni earum esse animi accusantium dignissimos consequuntur ratione! Quo, pariatur praesentium?</p>
+                <p className='max-w-[410px] mt-6'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia labore, sunt explicabo eaque est officiis facilis culpa repellendus ex magni earum esse animi accusantium dignissimos consequuntur ratione! Quo, pariatur praesentium?</p>
             </div>
 
             <div className='flex flex-wrap  justify-between w-full md:w-[45%] gap-5'>
@@ -20,6 +19,7 @@ const Footer = () => {
                             {section.links.map((link,i)=> (
                                 <li key={i}>
                                     <a href="#" className='hover:underline transition'>{link}</a>
+                                    
                                 </li>
                             ))}
                         </ul>
@@ -28,8 +28,9 @@ const Footer = () => {
             </div>
 
         </div>
-        <p className='py-4 text-center text-sm md:text-base text-gray-500/80'>Copyright 2025 © QuickBlog Shivesh Kumar Pandey  - All Right Reserved</p>
+        <p className='py-4 text-center text-sm md:text-base text-gray-500/80'>Copyright 2025 © QuickBlog Shivesh - All Right Reserved</p>
 
+      
     </div>
   )
 }
